@@ -3,45 +3,45 @@ const Schema = mongoose.Schema;
 
 const ProgramSchema = new Schema ({
   media : {
-    holding : String,
-    hologo : String,
+    channel : String,
+    channelogo : String,
     banner : String,
     contenidos : {
 
-        nombre : {
+        name : {
             programa : String,
-            descripcion : String
+            description : String
             },
             
-            origen : { 
-                pais : String,
-                idioma : String
+            origin : { 
+                country : String,
+                language : String
 
             },
 
             categoria : { 
                 principal : String,
-                secundaria: String,
-                terciario: String,
-                genero: {
-                    clasificacion: String,
-                    edadMin: Number
+                second: String,
+                third: String,
+                gender: {
+                    rating: String,
+                    ageMin: Number
                 }
 
             },
 
-            programacion: { 
-                duracionNminutos: Number,
-                publicacion: String
+            programation: { 
+                duration: Number,
+                publication: String
 
             },
 
             logo: { 
-                principal: String,
-                adicionales : {
-                    miniatura : String,
-                    secunaria : String,
-                    secundariaMin : String
+                programlogo: String,
+                aditional : {
+                    miniature : String,
+                    secondary : String,
+                    secundaryMin : String
                 }
 
             }
